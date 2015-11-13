@@ -7,4 +7,4 @@ Feature: Spiel starten
     Given a initialized game
     When I take the red pill
     Then there is no Red-Pill left
-    And the game ends
+    And there is a Blue-Pill

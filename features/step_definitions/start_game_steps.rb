@@ -3,17 +3,17 @@
 #Then there is no Red-Pill left and the game ends
 
 Given /^a initialized game$/ do
-  pending
+  @game = RedBlueExample::Game.new
 end
 
 When /^I take the red pill$/ do
-  pending
+  @game.take_red
 end
 
 Then /^there is no Red-Pill left$/ do
-  pending
+  expect(@game.red).to eq(true)
 end
 
-Then /^the game ends$/ do
-  pending
+Then /^there is a Blue-Pill$/ do
+  expect(@game.blue).to eq(false)
 end
